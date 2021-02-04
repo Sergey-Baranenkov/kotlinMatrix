@@ -1,0 +1,43 @@
+fun main() {
+    val matrix1 = Matrix(
+        arrayListOf(
+            arrayListOf(
+                ComplexNumber(ComplexElement(3.0,3.0)),
+                ComplexNumber(ComplexElement(4.0,4.0)),
+                ComplexNumber(ComplexElement(5.0,5.0))
+            ),
+            arrayListOf(
+                ComplexNumber(ComplexElement(6.0,6.0)),
+                ComplexNumber(ComplexElement(7.0,7.0)),
+                ComplexNumber(ComplexElement(8.0,8.0))
+            ),
+            arrayListOf(
+                ComplexNumber(ComplexElement(6.0,6.0)),
+                ComplexNumber(ComplexElement(7.0,7.0)),
+                ComplexNumber(ComplexElement(8.0,8.0))
+            )
+        )
+    )
+    val matrix2 = Matrix(
+        arrayListOf(
+            arrayListOf(
+                ComplexNumber(ComplexElement(3.0,3.0)),
+                ComplexNumber(ComplexElement(4.0,4.0)),
+                ComplexNumber(ComplexElement(5.0,5.0))
+            ),
+            arrayListOf(
+                ComplexNumber(ComplexElement(6.0,6.0)),
+                ComplexNumber(ComplexElement(7.0,7.0)),
+                ComplexNumber(ComplexElement(8.0,8.0))
+            ),
+            arrayListOf(
+                ComplexNumber(ComplexElement(6.0,6.0)),
+                ComplexNumber(ComplexElement(7.0,7.0)),
+                ComplexNumber(ComplexElement(8.0,8.0))
+            )
+        )
+    )
+    matrix1.multiply(matrix2).print()
+    matrix1.transpose().print()
+    matrix1.add(matrix2).print()
+}
